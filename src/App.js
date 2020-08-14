@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://swapi.co/api/planets/?page=1')
+    fetch('https://swapi.dev/api/planets/?page=1')
       .then(response => response.json())
       .then(infoPlanets => this.setState({planets: infoPlanets.results}))
     ;
